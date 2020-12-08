@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  /* background: url(./photos/myProfilePic.jpeg); */
+  background: black;
+  background-repeat: no-repeat;
+  background-size: 1600px 1000px;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* What kind of selector is this? */
+.logo {
+  width: 80px;
+  height: auto;
+  justify-content: flex-end;
+  padding: 1rem 2rem;
+  pointer-events: none;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  position: absolute;
+}
+
+main {
+  height: auto;
+  width: 100%;
+  display: grid;
+}
+
+.hero {
+  width: 100vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  background: url(./photos/myProfilePic.jpeg);
+  box-shadow: inset 0 0 15em 3em #000;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.banner {
+  display: flex;
+  width: 100vw;
+  height: 20vh;
+}
+
+/* This is an element within and element selector */
+nav > a {
+  height: 10%;
+  width: 8.5rem;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  background: transparent;
+  padding: 18px 0 18px;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 1rem 0 0 5rem;
+}
+
+/* This is an ID selector */
+#profile-pic {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  grid-column: 2/3;
+}
+
+h1 {
+  color: white;
+  grid-column: 2/3;
+  margin: 15rem 0 0 0;
+  font-size: 4rem;
+}
+
+.title {
+  color: white;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+p {
+  color: white;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.small-text {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: 95%;
+  left: 90%;
+}
+
+button {
+  position: absolute;
+  width: 70%;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  border: none;
+  background: transparent;
+  text-align: center;
+  color: white;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  top: 92%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffb7b7; /* Gecko Browsers */
+}

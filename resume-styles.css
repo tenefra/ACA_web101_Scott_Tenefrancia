@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Arvo", serif;
 }
 
 h1,
@@ -14,17 +19,47 @@ h6 {
 }
 
 h1 {
-  font-size: 60px;
+  font-family: "Heebo", sans-serif;
+  font-size: 65px;
+  margin-block-start: 0.4em;
   margin-block-end: 0;
+  font-weight: 900;
+  line-height: 80px;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  line-height: 26px;
   padding: 0 0 0 40px;
 }
 
 h4 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-block-end: 0.7em;
+}
+
+h5 {
   font-size: 18px;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+}
+
+p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+ul {
+  padding-inline-start: 20px;
+  line-height: 20px;
+}
+
+li {
+  font-size: 14px;
 }
 
 hr {
@@ -35,6 +70,10 @@ hr {
 .contact > hr {
   width: 70%;
   display: flex;
+}
+
+.info > p {
+  font-size: 14px;
 }
 
 .resume-container {
@@ -83,6 +122,7 @@ hr {
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
+  line-height: 28px;
 }
 
 .contact-flex {

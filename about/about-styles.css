@@ -69,3 +69,66 @@ button {
   justify-content: flex-start;
   margin-top: 25%;
 }
+
+@media only screen and (max-width: 1000px) {
+  .about-img {
+    width: 550px;
+    padding: 25% 0 0 0;
+  }
+  .float {
+    padding-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    display: none;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  button {
+    font-size: 1rem;
+    letter-spacing: 4px;
+    justify-content: center;
+    margin-top: 0;
+    padding: 25px 0;
+  }
+
+  .about-img {
+    width: 100%;
+    padding: 16% 0 0 0;
+  }
+
+  .float {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .small-text {
+    display: none;
+  }
+
+  .hi {
+    color: white;
+    font-size: 4rem;
+    margin: 0;
+    line-height: 4rem;
+  }
+
+  .bio {
+    font-size: 1.4rem;
+  }
+}

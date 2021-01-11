@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <br />
+      <div>
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" />
+      </div>
+      <br />
+      <div>
+        <label for="url">URL</label>
+        <input type="url" name="url" id="url" />
+      </div>
+      <br />
+      <div>
+        <label for="age">Comments</label>
+        <textarea type="textarea" placeholder="comments" name="comments" id="comments" min="20" max="500" step="5" cols="30" rows="5"></textarea>
+      </div>
+      <br />
+      <div>
+        <label class="title" for="date">How did you hear about me?</label><br />
+        <label for="classmate">Classmate</label>
+        <input type="checkbox" value="Classmate" /><br />
+        <label for="Resume Submission">Resume Submission</label>
+        <input type="checkbox" value="Resume Submission" /><br />
+        <label for="classmate">LinkedIn</label>
+        <input type="checkbox" value="LinkedIn" /><br />
+        <label for="classmate">Coding Academy Rec</label>
+        <input type="checkbox" value="Coding Academy Rec" />
+      </div>
+      <br />
+      <div>
+        <span class="title">Would you like to be contacted back?</span>
+        <div>
+          <label for="yes">Yes</label>
+          <input type="radio" name="contact" id="yes" value="yes" />
+        </div>
+        <div>
+          <label for="no">No</label>
+          <input type="radio" name="contact" id="female" value="female" />
+        </div>
+      </div>
+      <br />
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+    <!-- <script src="scripts.js"></script> -->
+  </body>
+</html>

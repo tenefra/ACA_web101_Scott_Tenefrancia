@@ -88,10 +88,6 @@ button {
     flex-direction: column;
   }
 
-  header {
-    display: none;
-  }
-
   p {
     text-align: center;
   }
@@ -106,7 +102,7 @@ button {
 
   .about-img {
     width: 100%;
-    padding: 16% 0 0 0;
+    padding: 0;
   }
 
   .float {

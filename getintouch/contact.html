@@ -3,58 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <div class="nav-container">
+        <nav>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="nav-menu">
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="../resume/resume.html">Resume</a>
+            <a class="nav-link" href="../about/about.html">About Me</a>
+            <a class="nav-link" href="../gallery/gallery.html">My Work</a>
+            <a class="nav-link" href="https://medium.com/@stenefra">My Blog</a>
+            <a class="nav-link" href="../getintouch/contact.html">Contact Me</a>
+          </div>
+        </nav>
+      </div>
+      <img src="../photos/new-aca-logo.png" class="logo" alt="austin coding academy logo" />
+    </header>
     <form action="results.html" method="GET" enctype="multipart/form-data">
       <div>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" />
+        <label class="title" for="email">Email</label><br />
+        <input class="text" type="email" name="email" id="email" required />
       </div>
       <br />
       <div>
-        <label for="phone">Phone</label>
-        <input type="tel" name="phone" id="phone" />
+        <label class="title" for="phone">Phone</label><br />
+        <input class="text" type="tel" name="phone" id="phone" />
       </div>
       <br />
       <div>
-        <label for="url">URL</label>
-        <input type="url" name="url" id="url" />
+        <label class="title" for="url">URL</label><br />
+        <input class="text" type="url" name="url" id="url" />
       </div>
       <br />
       <div>
-        <label for="age">Comments</label>
+        <label class="title" for="age">Comments</label><br />
         <textarea type="textarea" placeholder="comments" name="comments" id="comments" min="20" max="500" step="5" cols="30" rows="5"></textarea>
       </div>
       <br />
       <div>
         <label class="title" for="date">How did you hear about me?</label><br />
-        <label for="classmate">Classmate</label>
-        <input type="checkbox" value="Classmate" /><br />
-        <label for="Resume Submission">Resume Submission</label>
-        <input type="checkbox" value="Resume Submission" /><br />
-        <label for="classmate">LinkedIn</label>
-        <input type="checkbox" value="LinkedIn" /><br />
-        <label for="classmate">Coding Academy Rec</label>
-        <input type="checkbox" value="Coding Academy Rec" />
+        <input type="checkbox" value="Classmate" /> <label for="classmate">Classmate</label> <br />
+        <input type="checkbox" value="Resume Submission" /> <label for="Resume Submission">Resume Submission</label>
+        <br />
+        <input type="checkbox" value="LinkedIn" /> <label for="classmate">LinkedIn</label>
+        <br />
+        <input type="checkbox" value="Coding Academy Rec" /> <label for="classmate">Coding Academy Rec</label>
       </div>
       <br />
       <div>
         <span class="title">Would you like to be contacted back?</span>
         <div>
-          <label for="yes">Yes</label>
           <input type="radio" name="contact" id="yes" value="yes" />
+          <label for="yes">Yes</label>
         </div>
         <div>
-          <label for="no">No</label>
           <input type="radio" name="contact" id="female" value="female" />
+          <label for="no">No</label>
         </div>
       </div>
       <br />
-      <button type="reset">Reset</button>
-      <button type="submit">Submit</button>
+      <div class="buttons">
+        <button class="submit" type="submit">Submit</button><br />
+        <button class="reset" type="reset">Reset</button>
+      </div>
     </form>
-    <!-- <script src="scripts.js"></script> -->
+    <script src="../scripts.js"></script>
   </body>
 </html>
